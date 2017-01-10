@@ -1,0 +1,7 @@
+FROM mono
+
+ADD HelloWorld.cs HelloWorld.cs
+
+RUN mcs HelloWorld.cs
+
+CMD mono HelloWorld.exe
